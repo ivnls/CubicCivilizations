@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "cubic-civilizations",
+	"version": "${version}",
+	"name": "Cubic Civilizations",
+	"description": "Official beta version of Cubic Civilizations! by IvnLS :)",
+	"authors": [
+		"IvnLS"
+	],
+	"contact": {
+		"sources": "https://github.com/ivnls/cubiccivs"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cubic-civilizations/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ivnls.cubiccivilizations.CubicCivilizations"
+		],
+		"fabric-datagen": [
+			"com.ivnls.cubiccivilizations.CubicCivilizationsDataGenerator"
+		],
+		"client": [
+			"com.ivnls.cubiccivilizations.CCClient"
+		]
+	},
+	"mixins": [
+		"cubic-civilizations.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
